@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Mortgage Calculator</title>
+	<link rel="stylesheet" href="styles.css">
+	
+</head>
+<body>
+	<header>
+		<img src="buy-home.png" alt="icon" width="60">
+		<h2>The Mortgage Calculator</h2>
+	</header>
+	<main>
+	
+	<div class="userName">
+		<label for="name" class="namelabel">Name</label>
+		<input type="text" class="name">
+	</div>
+		<div class="container">
+		
+<!--		Mortgage Information-->
+
+			<div class="mortinfo">
+			<h2>Mortgage</h2>
+			<!--		Mortgae 1-->
+			<div class="mortinfo1">
+			<h3 class="mortgage1 mortinfo1h3">Mortgage 1</h3>
+				<label for="amount" >Amount</label>
+				<input type="text" class="amount" placeholder="in dollars"><br>
+				<label for="interest" >Interest</label>
+				<input type="text" class="interest" placeholder="in percentage"><br>
+				<label for="Length">Length</label>
+				<input type="text" class="length" placeholder="in years"><br>
+<!--
+				<label for="amount">Payment</label>
+				<input type="text" disabled class="payment"><br>
+-->
+				</div>
+				
+				<!--		Mortgae 1-->
+				<div class="mortinfo2 mortgage2">
+				<h3>Mortgage 2</h3>
+				<label for="amount" >Amount</label>
+				<input type="text" class="amount2" placeholder="in dollars"><br>
+				<label for="interest">Interest</label>
+				<input type="text" class="interest2" placeholder="in percentage"><br>
+				<label for="Length">Length</label>
+				<input type="text" class="length2" placeholder="in years"><br>
+<!--
+				<label for="amount">Payment</label>
+				<input type="text" disabled class="payment2"><br>
+-->
+				</div>
+			
+				
+			</div>
+			
+<!--			Extra Payment-->
+			<div class="extrapay">
+			<h2>Extra Payment</h2>
+			<!--		Mortgae 1-->
+			<div class="extrapay1">
+				<h3 class="mortgage1 extrapay1h3">Mortgage 1</h3>
+				<label for="downpayment">Down-Payment</label>
+				<input type="text" class="down" value="0.00"><br>
+				<label for="monthly">Monthly</label>	
+				<input type="text" class="extramonth" value="0.00"><br>
+				<label for="yearly">Yearly</label>
+				<input type="text" class="extrayear" value="0.00"> 
+		</div>
+		
+		<!--		Mortgae 2-->
+			<div class="extrapay2 mortgage2">
+				<h3>Mortgage 2</h3>
+				<label for="downpayment">Down-Payment</label>
+				<input type="text" class="down2" value="0.00"><br>
+				<label for="monthly">Monthly</label>	
+				<input type="text" class="extramonth2" value="0.00"><br>
+				<label for="yearly">Yearly</label>
+				<input type="text" class="extrayear2" value="0.00"> 
+		</div>
+
+		</div>
+		
+		</div>
+			
+<!--			The calculate button-->
+			<div class="calcDiv">
+			<button class="calculate">Calculate</button>
+			</div>
+			
+<!--			add another mortgage-->
+			<div class="calcDiv">
+			<button class="addButt">Add Another Mortgage</button>
+			</div>
+			
+<!--			compare-->
+			<div class="calcDiv">
+			<button class="compareButt">Compare</button>
+			</div>
+			
+	
+		
+<!--			</div>-->
+			<div class="container2">
+			<div class="summary mort1Entry">
+			
+			<h3 class="sumheader">Data Entered</h3>
+			<h3 class="sumMort1 mortgage1 dataEnteredh3">Mortgage 1</h3>
+			<div class="summaryp1">
+				<div class="youramtDiv item">
+					<p>Amount</p>
+					<p class="youramt"></p>
+				</div>
+				
+				<div class="yourIntDiv item">
+					<p>Rate</p>
+					<p class="yourInt"></p>
+				</div>
+				
+				<div class="yourMonDiv item">
+					<p>Months</p>
+					<p class="yourMon"></p>
+				</div>
+				
+				<div class="yourDownDiv item">
+					<p>Down-Payment</p>
+					<p class="yourDown"></p>
+				</div>
+				
+				<div class="yourExtraDiv item">
+					<p>Extra Payment</p>
+					<p class="yourExtra"></p>
+				</div>
+					</div>
+					
+					<div class="mortgage2 dataEntered">
+				<h3 class="sumMort1">Mortgage 2</h3>
+			<div class="summaryp1">
+				<div class="youramtDiv item">
+					<p>Amount</p>
+					<p class="youramt2"></p>
+				</div>
+				
+				<div class="yourIntDiv item">
+					<p>Rate</p>
+					<p class="yourInt2"></p>
+				</div>
+				
+				<div class="yourMonDiv item">
+					<p>Months</p>
+					<p class="yourMon2"></p>
+				</div>
+				
+				<div class="yourDownDiv item">
+					<p>Down-Payment</p>
+					<p class="yourDown2"></p>
+				</div>
+				
+				<div class="yourExtraDiv item">
+					<p>Extra Payment</p>
+					<p class="yourExtra2"></p>
+				</div>
+					</div>
+				</div>
+		</div>
+		
+		<div class="summary mort1Calc" >
+			<h3 class="sumheader">Data Calculated</h3>
+			<h3 class="sumMort1 mortgage1 dataCalculatedh3">Mortgage 1</h3>
+				<div class="summaryp1">
+				
+				<div class="yourPaymtDiv item">
+					<p>Monthly Payment</p>
+					<p class="yourPaymt"></p>
+				</div>
+				
+				<div class="yourTotalInDiv item">
+					<p>Total Interest</p>
+					<p class="yourTotalIn"></p>
+				</div>
+								
+				<div class="yourTotalPayDiv item">
+					<p>Total Balance</p>
+					<p class="yourTotalPay"></p>
+				</div>
+
+				
+				<div class="yourMonSavedDiv item">
+					<p>Months Saved</p>
+					<p class="yourMonSaved"></p>
+				</div>
+				
+				
+				<div class="yourIntSavedDiv item">
+					<p>Interest Saved</p>
+					<p class="yourIntSave"></p>
+				</div>
+		</div>
+		<div class="mortgage2 dataCalculated">
+		<h3 class="sumMort1" >Mortgage 2</h3>
+			
+				<div class="summaryp1">
+				
+				<div class="yourPaymtDiv item">
+					<p>Monthly Payment</p>
+					<p class="yourPaymt2"></p>
+				</div>
+				
+				<div class="yourTotalInDiv item">
+					<p>Total Interest</p>
+					<p class="yourTotalIn2"></p>
+				</div>
+								
+				<div class="yourTotalPayDiv item">
+					<p>Total Balance</p>
+					<p class="yourTotalPay2"></p>
+				</div>
+
+				
+				<div class="yourMonSavedDiv item">
+					<p>Months Saved</p>
+					<p class="yourMonSaved2"></p>
+				</div>
+				
+				
+				<div class="yourIntSavedDiv item">
+					<p>Interest Saved</p>
+					<p class="yourIntSave2"></p>
+				</div>
+		</div>
+			</div>
+		</div>
+		</div>
+			
+		<div class="graph">
+		<div id="graph" style="height: 500px; width: 100%;"></div>
+		</div>
+		
+		<div class="graphs">
+		<div id="graph2" style="height: 500px; width: 100%;"></div>
+		<div id="graph3" style="height: 500px; width: 100%;"></div>
+		<div id="graph4" style="height: 500px; width: 100%;"></div>
+		<div id="graph5" style="height: 500px; width: 100%;"></div>
+		</div>
+<!--			Amortization table-->
+			<div class="amortable">
+			
+<!--			Mortgage 1-->
+			<div class="amortable1">
+			<h3 class="tableSpan">Amortization Table </h3>
+				<table class="table">
+					<tr>
+						<th>Month</th>
+						<th>Payment</th>
+						<th>Interest</th>
+						<th>Principal</th>
+						<th>Balance</th>
+					</tr>
+					
+				</table>
+				</div>
+				
+				
+			<!--			Mortgage 2-->
+			<div class="amortable2 mortgage2">
+			<h3>Amortization Table Mortgae 2</h3>
+				<table class="table2">
+					<tr>
+						<th>Month</th>
+						<th>Payment</th>
+						<th>Interest</th>
+						<th>Principal</th>
+						<th>Balance</th>
+					</tr>
+
+				</table>
+				</div>	
+				
+				
+			</div>
+			
+			
+
+		
+	</main>
+	<footer></footer>
+</body>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script type="text/javascript" src="canvasjs.min.js"></script>
+<script src="script.js"></script>
+</html>
